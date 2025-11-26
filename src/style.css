@@ -8,9 +8,22 @@ body {
   --color-blue: #0072f5;
 }
 
-header {
+.site-header {
   display: flex;
   align-items: center;
+  padding: 12px 32px;
+  width: 100%;
+}
+
+.logo-link {
+  margin-right: 32px;
+  display: flex;
+  align-items: center;
+}
+
+.logo-link img {
+  max-height: 44px;
+  display: block;
 }
 
 .nav__list {
@@ -45,10 +58,9 @@ header {
 .is-active::after {
   content: '';
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: -6px;
-  width: 40px;
-  height: 4px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
   background: var(--color-blue);
 }

@@ -16,18 +16,7 @@ body {
 }
 
 .logo-link {
-  align-self: center;
   height: 40px;
-}
-
-.logo-link img {
-  height: 40px;
-  display: block;
-}
-
-nav {
-  display: flex;
-  align-items: center;
 }
 
 .nav__list {
@@ -35,11 +24,9 @@ nav {
   padding: 0;
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
 .nav__item {
-  height: 100%;
   margin: 0 10px;
   list-style: none;
   align-content: center;
@@ -67,11 +54,11 @@ nav {
   color: var(--moyo-blue);
 }
 
-.nav__link.is-active {
+.is-active {
   color: var(--moyo-blue);
 }
 
-.nav__link.is-active::after {
+.is-active::after {
   content: '';
   position: absolute;
   left: 0;
